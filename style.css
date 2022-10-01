@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(40, 13, 13);
+  text-align: center;
+  padding: 10px;
+  opacity: .5;
+}
+
+.form-wrapper {
+  width: max-content;
+  height: fit-content;
+  position: relative;
+  margin: 0 auto;
+}
+
+form {
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, .1);
+}
+
+.input {
+  display: block;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 2rem;
+  border: 2px solid #b5b5b5;
+
+}
+
+.input::placeholder {
+  color: black;
+  opacity: .3;
+}
+
+
+.todos {
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+}
+
+.todo-elem {
+  border-top: 1px solid #e5e5e5;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.clean-btn {
+  display: block;
+  width: 50px;
+  height: 40px;
+  border: none;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #b5b5b5;
+  position: absolute;
+  bottom: 10px;
+  right: -70px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.clean-btn:hover {
+  background-color: #d3d3d3;
+  box-shadow: 0 2px 4px #b5b5b5;
+  color: #9b9b9b;
+}
