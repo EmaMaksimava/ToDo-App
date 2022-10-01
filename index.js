@@ -2,6 +2,7 @@ const form = document.querySelector('#form');
 const input = document.querySelector('#input');
 const todos = document.querySelector('#todos');
 const toDoElems = document.querySelectorAll('.todo-elem');
+const cleanBtn = document.querySelector('#clean-btn');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -13,11 +14,11 @@ form.addEventListener('submit', (e) => {
 
     cleanInput();
 
-  } else {
-    return
   }
 
 })
+
+cleanBtn.addEventListener('click', cleanTodos);
 
 function createToDoElem(innerText) {
   const todoElement = document.createElement('li');
@@ -35,4 +36,14 @@ function completedElem (elem) {
 
 function cleanInput() {
   input.value = '';
+}
+
+function cleanTodos() {
+  const arrOfList = Array.from(todos.children);
+  console.log(arrOfList);
+  todos.innerHTML = '';
+
+  // arrOfList.forEach(elem => {
+  //  elem.remove();
+  // });
 }
