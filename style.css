@@ -26,6 +26,7 @@ form {
   max-width: 100%;
   margin: auto;
   box-shadow: 0 4px 10px rgb(0, 0, 0, .1);
+  position: relative;
 }
 
 .input {
@@ -58,4 +59,26 @@ form {
 
 .completed {
   text-decoration: line-through;
+}
+
+.clean-btn {
+  display: block;
+  width: 50px;
+  height: 40px;
+  border: none;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #b5b5b5;
+  position: absolute;
+  bottom: 10px;
+  right: -70px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.clean-btn:hover {
+  background-color: #d3d3d3;
+  box-shadow: 0 2px 4px #b5b5b5;
+  color: #9b9b9b;
 }
